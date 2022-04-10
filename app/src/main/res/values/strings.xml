@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KalkulatorDragovic</string>
+    <string name="iznos_kredita">Iznos kredita:</string>
+    <string name="hrk">HRK</string>
+    <string name="kamata">Kamata:</string>
+    <string name="trajanje_kredita">Trajanje kredita:</string>
+    <string name="mj">mj</string>
+    <string name="postotak">%</string>
+    <string name="izracunaj">Izračunaj</string>
+    <string name="anuitet">Anuitet:</string>
+    <string name="mjesecna_rata">Mjesečna rata:</string>
+    <string name="ukupna_kamata">Ukupna kamata:</string>
+    <string name="ukupni_povrat">Ukupni povrat:</string>
+    <string name="promjena_jezika">Promjena jezika</string>
+</resources>

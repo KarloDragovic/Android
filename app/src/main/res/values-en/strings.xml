@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KalkulatorDragovic</string>
+    <string name="iznos_kredita">Loan amount:</string>
+    <string name="hrk">USD</string>
+    <string name="kamata">Interest:</string>
+    <string name="trajanje_kredita">Loan period:</string>
+    <string name="mj">mt</string>
+    <string name="postotak">%</string>
+    <string name="izracunaj">Calculate</string>
+    <string name="anuitet">Monthly:</string>
+    <string name="mjesecna_rata">Monthly:</string>
+    <string name="ukupna_kamata">Interest sum:</string>
+    <string name="ukupni_povrat">Debt sum:</string>
+    <string name="promjena_jezika">Promjena jezika</string>
+</resources>

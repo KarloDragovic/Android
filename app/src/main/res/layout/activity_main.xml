@@ -190,6 +190,7 @@
         android:layout_height="53dp"
         android:layout_marginTop="28dp"
         android:background="@color/almostWhite"
+        android:backgroundTint="@color/almostWhite"
         android:contentDescription="@string/promjena_jezika"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.898"
@@ -209,6 +210,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:tickMarkTint="@color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

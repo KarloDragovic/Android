@@ -4,7 +4,7 @@
     <string name="iznos_kredita">Loan amount:</string>
     <string name="hrk">USD</string>
     <string name="kamata">Interest:</string>
-    <string name="trajanje_kredita">Loan period:</string>
+    <string name="trajanje_kredita">Period:</string>
     <string name="mj">mt</string>
     <string name="postotak">%</string>
     <string name="izracunaj">Calculate</string>

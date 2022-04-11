@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">KalkulatorDragovic</string>
     <string name="iznos_kredita">Beløb:</string>
-    <string name="hrk">DNK</string>
+    <string name="hrk">EUR</string>
     <string name="kamata">Interesse:</string>
     <string name="trajanje_kredita">Varighed:</string>
     <string name="mj">mån</string>
@@ -13,4 +13,5 @@
     <string name="ukupna_kamata">" Samlet rente:"</string>
     <string name="ukupni_povrat">" Samlet afkast:"</string>
     <string name="promjena_jezika">Promjena jezika</string>
+    <string name="currency">EUR</string>
 </resources>

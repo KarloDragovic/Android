@@ -14,6 +14,7 @@ import com.dolatkia.animatedThemeManager.AppTheme
 import com.dolatkia.animatedThemeManager.ThemeActivity
 import com.dolatkia.animatedThemeManager.ThemeManager
 import hr.tvz.android.kalkulatordragovic.databinding.ActivityMainBinding
+import java.text.NumberFormat
 import java.util.*
 import kotlin.math.pow
 
@@ -43,17 +44,20 @@ class MainActivity : ThemeActivity() {
                         val trajanjeKreditaNum = trajanjeKredita.toDouble()
                         val kamataNum = kamata.toDouble() / 100.0
 
-                        var izraz = (1.0 + kamataNum).pow(trajanjeKreditaNum)
-
                         val anuitet = iznosKreditaNum * ((kamataNum * (1.0 + kamataNum).pow(trajanjeKreditaNum))/((1.0 + kamataNum).pow(trajanjeKreditaNum) - 1.0))
                         val ukupnaKamata = (anuitet * trajanjeKreditaNum) - iznosKreditaNum
                         val ukupniPovrat = anuitet * trajanjeKreditaNum
 
-                        binding.mjesecnaRata.text = "%.2f".format(anuitet) + " HRK"
+                        val format: NumberFormat = NumberFormat.getCurrencyInstance()
+                        format.setMaximumFractionDigits(2)
+                        format.setCurrency(Currency.getInstance("EUR"))
 
-                        binding.ukupnaKamata.text = "%.2f".format(ukupnaKamata) + " HRK"
 
-                        binding.ukupniPovrat.text = "%.2f".format(ukupniPovrat) + " HRK"
+                        binding.mjesecnaRata.text = format.format(anuitet)
+
+                        binding.ukupnaKamata.text = format.format(ukupnaKamata)
+
+                        binding.ukupniPovrat.text = format.format(ukupniPovrat)
 
                     }else{
                         Toast.makeText(applicationContext, "Vrijednosti ne smiju biti nula", Toast.LENGTH_SHORT).show()

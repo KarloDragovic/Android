@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">KalkulatorDragovic</string>
     <string name="iznos_kredita">Loan amount:</string>
-    <string name="hrk">USD</string>
+    <string name="hrk">EUR</string>
     <string name="kamata">Interest:</string>
     <string name="trajanje_kredita">Period:</string>
     <string name="mj">mt</string>
@@ -13,4 +13,5 @@
     <string name="ukupna_kamata">Interest sum:</string>
     <string name="ukupni_povrat">Debt sum:</string>
     <string name="promjena_jezika">Promjena jezika</string>
+    <string name="currency">EUR</string>
 </resources>

@@ -3,7 +3,7 @@
     <string name="app_name">KalkulatorDragovic</string>
     <string name="postotak">%</string>
     <string name="iznos_kredita">Danski iznos:</string>
-    <string name="hrk">DNK</string>
+    <string name="hrk">EUR</string>
     <string name="kamata">Danskamata:</string>
     <string name="trajanje_kredita">Dansko trajanje:</string>
     <string name="mj">mon</string>
@@ -13,4 +13,5 @@
     <string name="ukupna_kamata">Danska uk kamaata:</string>
     <string name="ukupni_povrat">Danski povrat:</string>
     <string name="promjena_jezika">Promjena jezika</string>
+    <string name="currency">EUR</string>
 </resources>

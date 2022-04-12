@@ -38,13 +38,18 @@ class MainActivity : ThemeActivity() {
 
             if (iznosKredita.isNotEmpty() && trajanjeKredita.isNotEmpty() && kamata.isNotEmpty()) {
 
-                    if(iznosKredita.toInt() != 0 && kamata.toInt() != 0 && trajanjeKredita.toInt() != 0){
+                    if(iznosKredita.toDouble() != 0.0 && kamata.toDouble() != 0.0 && trajanjeKredita.toDouble() != 0.0){
 
                         val iznosKreditaNum = iznosKredita.toDouble()
                         val trajanjeKreditaNum = trajanjeKredita.toDouble()
                         val kamataNum = kamata.toDouble() / 100.0
 
-                        val anuitet = iznosKreditaNum * ((kamataNum * (1.0 + kamataNum).pow(trajanjeKreditaNum))/((1.0 + kamataNum).pow(trajanjeKreditaNum) - 1.0))
+                        var anuitet = iznosKreditaNum * ((kamataNum * (1.0 + kamataNum).pow(trajanjeKreditaNum))/((1.0 + kamataNum).pow(trajanjeKreditaNum) - 1.0))
+
+                        var r = 1 + ((kamataNum / 100) * ((trajanjeKreditaNum * 31) / 360))
+
+                        anuitet = iznosKreditaNum * ((r.pow(trajanjeKreditaNum) * ((r - 1) / (r.pow(trajanjeKreditaNum) - 1))))
+
                         val ukupnaKamata = (anuitet * trajanjeKreditaNum) - iznosKreditaNum
                         val ukupniPovrat = anuitet * trajanjeKreditaNum
 
